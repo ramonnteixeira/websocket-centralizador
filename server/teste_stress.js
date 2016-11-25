@@ -1,7 +1,7 @@
 var WebSocket = require('ws');
 
 
-for (var j = 0; j < 10; j++) {
+for (var j = 0; j < 100; j++) {
     setTimeout(function() {
         for (var i = 0; i < 1500; i++) {
             openWs();
@@ -14,6 +14,6 @@ function openWs() {
   var ws = new WebSocket('ws://localhost:9000');
   ws.on('open', function() {
     ws.send('{"nome": "Teste", "mensagem": "teste"}');
-    setTimeout(function() { ws.close(); }, 15000);
+    setTimeout(function() { ws.close(); }, 30000);
   });
 }

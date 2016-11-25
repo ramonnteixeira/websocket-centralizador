@@ -2,7 +2,7 @@
   "name": "ws-centralizador",
   "version": "1.0.0",
   "description": "Centralizador de mensagem WebSocket",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "pg": "^6.1.0",
     "weak": "^1.0.1",

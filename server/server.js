@@ -5,8 +5,8 @@ var weak = require('weak');
 var count = 0;
 var countGc = 0;
 
-//var dbUtil = require('./scripts/db-util');
-//dbUtil.selectTest();
+var dbUtil = require('./scripts/db-util');
+dbUtil.selectTest();
 
 wss.on('connection', function(socket) {
 
@@ -66,7 +66,7 @@ wss.on('connection', function(socket) {
         // }
 
         socket.close();
-        delete socket;
+        socket = null;
     });
 
 });
