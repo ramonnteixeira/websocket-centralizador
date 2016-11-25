@@ -1,0 +1,18 @@
+{
+  "name": "ws-centralizador",
+  "version": "1.0.0",
+  "description": "Centralizador de mensagem WebSocket",
+  "main": "index.js",
+  "dependencies": {
+    "pg": "^6.1.0",
+    "weak": "^1.0.1",
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node --always-compact --max-old-space-size=1900 --expose_gc server.js",
+    "client": "node --max-old-space-size=3500 teste_stress.js"
+  },
+  "author": "Ramon Nunes Teixeira",
+  "license": "Apache-2.0"
+}
